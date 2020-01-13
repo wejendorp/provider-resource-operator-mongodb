@@ -1,0 +1,25 @@
+kind: core.blockware.com/v1/ResourceType/Operator
+metadata:
+  id: nosql.blockware.com/v1/MongoDB
+  name: MongoDB 4.0
+  description: Use MongoDB 4.0 in your plans
+spec:
+
+  local:
+    image: mongo:4.0
+    health:
+      cmd: echo 'db.runCommand("ping").ok' | mongo test --quiet
+      interval: 5000
+    ports:
+      mongodb:
+        port: 27017
+        type: tcp
+    mounts:
+      db: /data/db
+    env:
+      MONGO_INITDB_ROOT_USERNAME: 'root'
+      MONGO_INITDB_ROOT_PASSWORD: 'root'
+    authentication:
+      username: root
+      password: root
+
