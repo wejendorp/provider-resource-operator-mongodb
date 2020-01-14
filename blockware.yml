@@ -1,6 +1,6 @@
 kind: core.blockware.com/v1/ResourceType/Operator
 metadata:
-  id: nosql.blockware.com/v1/MongoDB
+  id: nosqldb.blockware.com/v1/MongoDB
   name: MongoDB 4.0
   description: Use MongoDB 4.0 in your plans
 spec:

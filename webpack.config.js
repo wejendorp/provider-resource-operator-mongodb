@@ -3,7 +3,7 @@ const Path = require('path');
 module.exports = {
     mode: 'development',
     entry: {
-        'nosql.blockware.com/v1/MongoDB': Path.resolve(__dirname, "./src/web")
+        'nosqldb.blockware.com/v1/MongoDB': Path.resolve(__dirname, "./src/web")
     },
     output: {
         path: Path.join(process.cwd(), 'web'),
