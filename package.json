@@ -1,6 +1,6 @@
 {
     "name": "@blockware/provider-resource-operator-mongodb",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "Provides MongoDB resource type to Blockware",
     "keywords": [
         "blockware",
