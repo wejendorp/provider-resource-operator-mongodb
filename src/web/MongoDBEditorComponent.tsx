@@ -1,6 +1,6 @@
 import React,{ChangeEvent, Component} from "react";
 
-import {FormRow} from "@blockware/ui-web-components";
+import {SingleLineInput} from "@blockware/ui-web-components";
 
 import {
     ResourceMetadata,
@@ -29,7 +29,6 @@ class MongoDBEditorComponent extends Component<ResourceConfigProps<ResourceMetad
                 value={this.props.metadata.name}
                 label={"Name"}
                 validation={['required', validateDatabaseName]}
-                placeholder="E.g. MyMongoDB"
                 help={"Name your database"}
                 onChange={(name: string, input: string) => this.handleMetaDataChanged(name, input)}
             />
