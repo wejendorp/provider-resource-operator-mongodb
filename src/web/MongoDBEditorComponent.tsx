@@ -15,26 +15,24 @@ function validateDatabaseName(fieldName:string, name:string) {
 
 class MongoDBEditorComponent extends Component<ResourceConfigProps<ResourceMetadata>> {
 
-    private handleMetaDataChanged(evt:ChangeEvent<HTMLInputElement>) {
+    private handleMetaDataChanged(name:string, value:string) {
         const metadata = Object.assign({}, this.props.metadata);
-        metadata[evt.target.name] = evt.target.value.trim();
+        metadata[name] = value.trim();
         this.props.onDataChanged(metadata);
     }
 
     render() {
 
         return (
-            <FormRow label="Name"
-                     help="Name your database"
-                     validation={['required', validateDatabaseName]}>
-
-                <input type="text" placeholder="E.g. MyMongoDB"
-                       name="name"
-                       autoComplete={"off"}
-                       value={this.props.metadata.name}
-                       onChange={(evt) => {this.handleMetaDataChanged(evt)}} />
-
-            </FormRow>
+            <SingleLineInput
+                name={"name"}
+                value={this.props.metadata.name}
+                label={"Name"}
+                validation={['required', validateDatabaseName]}
+                placeholder="E.g. MyMongoDB"
+                help={"Name your database"}
+                onChange={(name: string, input: string) => this.handleMetaDataChanged(name, input)}
+            />
         )
     }
 }
