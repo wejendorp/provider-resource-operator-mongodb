@@ -4,7 +4,6 @@ metadata:
   name: MongoDB 4.0
   description: Use MongoDB 4.0 in your plans
 spec:
-
   local:
     image: mongo:4.0
     health:
