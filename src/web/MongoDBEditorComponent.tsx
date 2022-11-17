@@ -1,6 +1,6 @@
-import React,{ChangeEvent, Component} from "react";
+import React,{Component} from "react";
 
-import {SingleLineInput} from "@blockware/ui-web-components";
+import {FormInput} from "@blockware/ui-web-components";
 
 import {
     ResourceMetadata,
@@ -26,7 +26,7 @@ class MongoDBEditorComponent extends Component<ResourceConfigProps<ResourceMetad
     render() {
 
         return (
-            <SingleLineInput
+            <FormInput
                 name={"name"}
                 value={this.props.metadata.name}
                 label={"Name"}
