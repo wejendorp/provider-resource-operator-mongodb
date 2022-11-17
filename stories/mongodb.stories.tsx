@@ -7,7 +7,7 @@ import {
 import '@blockware/ui-web-components/styles/index.less';
 import MongoDBEditorComponent from "../src/web/MongoDBEditorComponent";
 
-const RESOURCE_KIND = 'nosqldb.blockware.com/v1/MongoDB';
+const RESOURCE_KIND = 'blockware/resource-type-mongodb';
 
 const block:BlockWrapper<any> = {
   addEntity: entity => {
