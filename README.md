@@ -1,7 +1,7 @@
 # MongoDB Resource Provider
-Provides MongoDB database resources to the blockware eco-system.
+Provides MongoDB database resources to the kapeta eco-system.
 
 ---
-For details about Blockware Providers see:
+For details about Kapeta Providers see:
 
 https://github.com/blockwarecom/provider-documentation

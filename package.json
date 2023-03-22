@@ -1,9 +1,9 @@
 {
-    "name": "@blockware/resource-type-mongodb",
+    "name": "@kapeta/resource-type-mongodb",
     "version": "local",
-    "description": "Provides MongoDB resource type to Blockware",
+    "description": "Provides MongoDB resource type to Kapeta",
     "keywords": [
-        "blockware",
+        "kapeta",
         "mongodb",
         "resource-type"
     ],
@@ -22,16 +22,16 @@
     },
     "dependencies": {},
     "peerDependencies": {
-        "@blockware/ui-web-components": "<2",
-        "@blockware/ui-web-context": "<2",
-        "@blockware/ui-web-types": "<2",
-        "@blockware/ui-web-utils": "<2"
+        "@kapeta/ui-web-components": "<2",
+        "@kapeta/ui-web-context": "<2",
+        "@kapeta/ui-web-types": "<2",
+        "@kapeta/ui-web-utils": "<2"
     },
     "devDependencies": {
-        "@blockware/ui-web-components": "<2",
-        "@blockware/ui-web-context": "<2",
-        "@blockware/ui-web-types": "<2",
-        "@blockware/ui-web-utils": "<2",
+        "@kapeta/ui-web-components": "<2",
+        "@kapeta/ui-web-context": "<2",
+        "@kapeta/ui-web-types": "<2",
+        "@kapeta/ui-web-utils": "<2",
         "@babel/cli": "^7.18.10",
         "@babel/core": "^7.18.13",
         "@babel/plugin-proposal-class-properties": "^7.18.6",

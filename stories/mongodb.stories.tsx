@@ -2,12 +2,12 @@ import React from 'react';
 import {
   ResourceKind,
   BlockWrapper, ResourceMetadata
-} from '@blockware/ui-web-types';
+} from '@kapeta/ui-web-types';
 
-import '@blockware/ui-web-components/styles/index.less';
+import '@kapeta/ui-web-components/styles/index.less';
 import MongoDBEditorComponent from "../src/web/MongoDBEditorComponent";
 
-const RESOURCE_KIND = 'blockware/resource-type-mongodb';
+const RESOURCE_KIND = 'kapeta/resource-type-mongodb';
 
 const block:BlockWrapper<any> = {
   addEntity: entity => {
