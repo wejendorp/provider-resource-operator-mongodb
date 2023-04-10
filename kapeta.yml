@@ -4,6 +4,8 @@ metadata:
   title: MongoDB
   description: Use MongoDB in your plans
 spec:
+  ports:
+    - type: mongodb
   local:
     image: mongo:4.0
     health:
