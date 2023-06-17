@@ -7,9 +7,9 @@ spec:
   ports:
     - type: mongodb
   local:
-    image: mongo:4.0
+    image: kapetacom/mongodb-replicaset:6.0.6
     health:
-      cmd: echo 'db.runCommand("ping").ok' | mongo test --quiet
+      cmd: /opt/healthcheck.sh
       interval: 5000
     ports:
       mongodb:
@@ -18,8 +18,10 @@ spec:
     mounts:
       db: /data/db
     env:
-      MONGO_INITDB_ROOT_USERNAME: 'root'
-      MONGO_INITDB_ROOT_PASSWORD: 'root'
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
+      MONGO_REPLICA_SET_NAME: rs0
+      MONGO_INITDB_DATABASE: test
     credentials:
       username: root
       password: root
